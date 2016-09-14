@@ -20,7 +20,7 @@ os.system("dialog --inputbox 'Enter the range of IP to be searched in form a.b.c
 f1=open(inp)
 IPrange=f1.read()
 f1.close()
-#IPrange='192.168.1.1-80'
+#Command for IP scan within a specefied range
 cmd = "nmap -sP "+str(IPrange) + " -n |grep 'Nmap scan' |cut -d ' ' -f5"
 ip=commands.getstatusoutput(cmd)
 ips=[]
@@ -34,7 +34,7 @@ f1=open(inp)
 scp_pass=f1.read()
 scp_pass=scp_pass.strip()
 f1.close()
-scp_pass="ankush"
+
 #Setting up IP in string for dialog box input
 s=" "
 x=1
