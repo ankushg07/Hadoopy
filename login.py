@@ -1,7 +1,6 @@
 #! /usr/bin/python
 
-import time 
-import os 
+import time import os 
 import sys
 import commands
 
